@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Janhavi Sharma | Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      color: #fff;
+      animation: fadeIn 1.2s ease-in;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #94a3b8;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      color: #38bdf8;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #facc15;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      animation: fadeUp 1.2s ease-in;
+    }
+    h2 {
+      color: #facc15;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .skills i {
+      margin-right: 8px;
+      color: #38bdf8;
+    }
+    .project {
+      margin-bottom: 25px;
+      padding: 15px;
+      border-left: 4px solid #38bdf8;
+      background: rgba(255,255,255,0.03);
+      border-radius: 8px;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #0f172a;
+      color: #94a3b8;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #38bdf8;
+      margin-left: 5px;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 768px) {
+      header h1 {font-size: 2rem;}
+      nav a {display: inline-block; margin: 10px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Janhavi Sharma</h1>
+    <p><i class="fa-solid fa-briefcase"></i> Aspiring Data Analyst | Programmer Analyst at Cognizant</p>
+    <nav>
+      <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+      <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+      <a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+      <a href="https://github.com/Janhavi968" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2><i class="fa-solid fa-user"></i> About Me</h2>
+    <p>
+      Hello! I am <strong>Janhavi Sharma</strong>, currently working as a <strong>Programmer Analyst</strong> at Cognizant (2023 – Present) in the .NET domain. I have worked extensively with SQL, writing queries and functions, and I am now transitioning towards a career in <strong>Data Analysis</strong>. 
+      I hold a <strong>B.Tech in Computer Science and Engineering</strong> from Lovely Professional University (Class of 2023).
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2><i class="fa-solid fa-laptop-code"></i> Skills</h2>
+    <ul class="skills">
+      <li><i class="fa-solid fa-database"></i> SQL (Queries, Functions)</li>
+      <li><i class="fa-solid fa-chart-column"></i> Power BI</li>
+      <li><i class="fa-solid fa-file-excel"></i> Excel</li>
+      <li><i class="fa-solid fa-calculator"></i> DAX</li>
+      <li><i class="fa-solid fa-comments"></i> Communication</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2><i class="fa-solid fa-diagram-project"></i> Projects</h2>
+    <div class="project">
+      <h3>Blinkit Data Analysis Dashboard</h3>
+      <p>
+        Developed a sales analysis dashboard in Microsoft Excel for Blinkit. Focused on deriving insights about customer behaviour, product preferences, and outlet efficiency from sales and outlet performance data.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Pizza Sales Dashboard</h3>
+      <p>
+        Built an analytics dashboard combining Excel and SQL Server to track KPIs and sales trends for a pizza sales dataset. SQL queries replicated the same analytics done in Excel to ensure consistency.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Uber Trip Analysis Dashboard</h3>
+      <p>
+        Designed an analysis dashboard to provide insights into ride booking patterns, revenue generation, customer behaviour, and operational efficiency.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Janhavi Sharma | <i class="fa-brands fa-github"></i><a href="https://github.com/Janhavi968" target="_blank"> GitHub</a></p>
+  </footer>
+</body>
+</html>

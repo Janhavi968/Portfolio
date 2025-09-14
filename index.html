@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -69,15 +69,48 @@
     .project-card .content {
       padding: 15px;
     }
-    .project-card h3 { margin-bottom: 8px; color: #38bdf8; }
-
-    .contact-info {
-      text-align: center;
-      font-size: 1.1rem;
+    .project-card h3 { margin-bottom: 8px; }
+    .project-card h3 a {
+      color: #38bdf8;
+      text-decoration: none;
+      transition: color 0.3s;
     }
-    .contact-info p { margin: 10px 0; }
-    .contact-info a { color: #38bdf8; text-decoration: none; }
-    .contact-info a:hover { color: #facc15; }
+    .project-card h3 a:hover { color: #facc15; }
+
+    /* Contact Cards */
+    .contact-cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .contact-card {
+      flex: 1 1 250px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .contact-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    }
+    .contact-card i {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+    .contact-card a {
+      display: block;
+      color: #e2e8f0;
+      text-decoration: none;
+      margin-top: 5px;
+      font-weight: 500;
+    }
+    .contact-card a:hover { color: #facc15; }
 
     footer {
       text-align: center;
@@ -135,21 +168,21 @@
       <div class="project-card">
         <img src="https://snipboard.io/TqVvXJ.jpg" alt="Blinkit Dashboard">
         <div class="content">
-          <h3>Blinkit Data Analysis Dashboard</h3>
+          <h3><a href="https://github.com/Janhavi968/Blinkit-Data-Analysis-Dashboard" target="_blank">Blinkit Data Analysis Dashboard</a></h3>
           <p>Developed a sales analysis dashboard in Microsoft Excel for Blinkit. Focused on deriving insights about customer behaviour, product preferences, and outlet efficiency.</p>
         </div>
       </div>
       <div class="project-card">
         <img src="https://snipboard.io/RjJNKG.jpg" alt="Pizza Sales Dashboard">
         <div class="content">
-          <h3>Pizza Sales Dashboard</h3>
+          <h3><a href="https://github.com/Janhavi968/Pizza-Sales-Dashboard" target="_blank">Pizza Sales Dashboard</a></h3>
           <p>Built an analytics dashboard combining Excel and SQL Server to track KPIs and sales trends for a pizza sales dataset. SQL queries replicated the same analytics done in Excel to ensure consistency.</p>
         </div>
       </div>
       <div class="project-card">
         <img src="https://snipboard.io/ZSfwe3.jpg" alt="Uber Trip Dashboard">
         <div class="content">
-          <h3>Uber Trip Analysis Dashboard</h3>
+          <h3><a href="https://github.com/Janhavi968/Uber-Trip-Analysis" target="_blank">Uber Trip Analysis Dashboard</a></h3>
           <p>Designed an analysis dashboard to provide insights into ride booking patterns, revenue generation, customer behaviour, and operational efficiency.</p>
         </div>
       </div>
@@ -158,10 +191,22 @@
 
   <section id="contact">
     <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
-    <div class="contact-info">
-      <p><i class="fa-solid fa-user"></i> Janhavi Sharma</p>
-      <p><i class="fa-solid fa-envelope"></i> <a href="mailto:janhavisharma0011@gmail.com">janhavisharma0011@gmail.com</a></p>
-      <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Janhavi968" target="_blank">github.com/Janhavi968</a></p>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <i class="fa-solid fa-user"></i>
+        <p><strong>Name</strong></p>
+        <p>Janhavi Sharma</p>
+      </div>
+      <div class="contact-card">
+        <i class="fa-solid fa-envelope"></i>
+        <p><strong>Email</strong></p>
+        <a href="mailto:janhavisharma0011@gmail.com">janhavisharma0011@gmail.com</a>
+      </div>
+      <div class="contact-card">
+        <i class="fa-brands fa-github"></i>
+        <p><strong>GitHub</strong></p>
+        <a href="https://github.com/Janhavi968" target="_blank">github.com/Janhavi968</a>
+      </div>
     </div>
   </section>
 
